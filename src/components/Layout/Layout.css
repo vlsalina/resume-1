@@ -1,0 +1,31 @@
+/* grid areas */
+.a {
+  grid-area: a;
+}
+
+.b {
+  grid-area: b;
+}
+
+.c {
+  grid-area: c;
+}
+/* end grid areas */
+
+.layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+@media screen and (min-width: 1192px) {
+  .layout {
+    width: 1192px;
+    grid-template-areas:
+      "b a a a"
+      "b c c c"
+      "b c c c"
+      "b c c c"
+      "b c c c";
+  }
+}

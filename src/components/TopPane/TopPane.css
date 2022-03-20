@@ -1,0 +1,7 @@
+.top-pane {
+  background-color: var(--grayish-dark-blue);
+  color: var(--very-light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
