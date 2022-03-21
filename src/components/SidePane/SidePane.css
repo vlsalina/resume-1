@@ -2,7 +2,37 @@
   background-color: var(--grayish-dark-blue);
   color: var(--very-light-grey);
   font-family: var(--poppins);
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.t1 {
+  color: var(--very-light-grey);
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.t2 {
+  color: var(--very-light-grey);
+}
+
+.side--container-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.side--container-2 {
+  text-align: right;
+}
+
+.side--container-2 p {
+  font-size: 0.75rem;
+  margin: 0.25rem 0;
+}
+
+.side--margin-1 {
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 1192px) {
