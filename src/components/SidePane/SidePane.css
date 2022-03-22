@@ -2,6 +2,7 @@
   background-color: var(--grayish-dark-blue);
   font-family: var(--poppins);
   padding: 2rem;
+  border-right: none;
 }
 
 .t1 {
@@ -38,6 +39,6 @@
 
 @media screen and (min-width: 1192px) {
   .side-pane {
-    width: 99%;
+    border-right: 1px solid var(--very-light-grey);
   }
 }

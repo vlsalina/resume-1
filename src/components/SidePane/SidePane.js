@@ -18,7 +18,9 @@ const SidePane = () => {
           </li>
           <li>
             <div className="side--container-1">
-              <a href={mailTo}>vincent.salinas.2022@gmail.com</a>
+              <a className="t1" href={mailTo}>
+                vincent.salinas.2022@gmail.com
+              </a>
               <Nbsp />
               <Hexagon />
             </div>
