@@ -1,13 +1,11 @@
 .side-pane {
   background-color: var(--grayish-dark-blue);
-  color: var(--very-light-grey);
   font-family: var(--poppins);
   padding: 2rem;
 }
 
 .t1 {
   color: var(--very-light-grey);
-  font-size: 0.75rem;
   text-align: right;
 }
 
@@ -27,12 +25,15 @@
 }
 
 .side--container-2 p {
-  font-size: 0.75rem;
   margin: 0.25rem 0;
 }
 
 .side--margin-1 {
   margin-bottom: 4rem;
+}
+
+.side--ul {
+  list-style-type: none;
 }
 
 @media screen and (min-width: 1192px) {

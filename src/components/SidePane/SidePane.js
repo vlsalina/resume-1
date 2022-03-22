@@ -2,12 +2,13 @@ import React from "react";
 import Hexagon from "../icons/Hexagon/Hexagon";
 import "./SidePane.css";
 import Nbsp from "../typesetters/NBSP/Nbsp";
+import { skills, mailTo } from "../data/data";
 
 const SidePane = () => {
   return (
     <section className="side-pane b">
       <div className="side--margin-1">
-        <ul>
+        <ul className="side--ul">
           <li>
             <div className="side--container-1">
               <span className="t1">(619) 495-6738</span>
@@ -17,7 +18,7 @@ const SidePane = () => {
           </li>
           <li>
             <div className="side--container-1">
-              <span className="t1">vincent.salinas.2022@googlemail.com</span>
+              <a href={mailTo}>vincent.salinas.2022@gmail.com</a>
               <Nbsp />
               <Hexagon />
             </div>
@@ -36,8 +37,24 @@ const SidePane = () => {
               <a
                 className="t1"
                 href="https://www.linkedin.com/in/vincent-salinas-24123a232/"
+                target="_blank"
+                rel="noreferrer"
               >
                 LinkedIn
+              </a>
+              <Nbsp />
+              <Hexagon />
+            </div>
+          </li>
+          <li>
+            <div className="side--container-1">
+              <a
+                className="t1"
+                href="https://heyimvincent.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Portfolio
               </a>
               <Nbsp />
               <Hexagon />
@@ -53,34 +70,12 @@ const SidePane = () => {
       </div>
       <div className="side--container-2 side--margin-1">
         <h3 className="main__header">key skills</h3>
-        <ul>
-          <li>
-            <p className="t2">HTML</p>
-          </li>
-          <li>
-            <p className="t2">CSS</p>
-          </li>
-          <li>
-            <p className="t2">Javascript</p>
-          </li>
-          <li>
-            <p className="t2">MongoDB</p>
-          </li>
-          <li>
-            <p className="t2">Express.js</p>
-          </li>
-          <li>
-            <p className="t2">React.js</p>
-          </li>
-          <li>
-            <p className="t2">Node.js</p>
-          </li>
-          <li>
-            <p className="t2">Mongoose</p>
-          </li>
-          <li>
-            <p className="t2">Redux</p>
-          </li>
+        <ul className="side--ul">
+          {skills.map((x) => (
+            <li key={`side-${x.name}`}>
+              <p className="t2">{x.name}</p>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

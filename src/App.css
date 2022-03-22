@@ -9,7 +9,7 @@
   --icy-blue: rgb(168, 167, 211);
 
   /* base font size */
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 * {
@@ -23,6 +23,3 @@
   height: 100vh;
 }
 
-ul {
-  list-style-type: none;
-}

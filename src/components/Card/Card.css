@@ -1,0 +1,17 @@
+.card {
+  margin-bottom: 2rem;
+}
+
+.card--font-styling-1 {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+
+.card__name {
+  font-style: italic;
+  text-decoration: none;
+}
+
+a.card__name:hover {
+  color: var(--icy-blue);
+}
