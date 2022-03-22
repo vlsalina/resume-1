@@ -16,6 +16,22 @@
   width: 100%;
   height: 100%;
   display: grid;
+  grid-template-areas:
+    "a a a a"
+    "b b b b"
+    "c c c c"
+    "c c c c"
+    "c c c c";
+}
+
+@media screen and (min-width: 550px) {
+  .layout {
+    grid-template-areas:
+      "a a a a"
+      "b c c c"
+      "b c c c"
+      "b c c c";
+  }
 }
 
 @media screen and (min-width: 1192px) {

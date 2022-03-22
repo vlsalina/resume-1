@@ -1,12 +1,44 @@
 .side-pane {
   background-color: var(--grayish-dark-blue);
-  color: var(--very-light-grey);
   font-family: var(--poppins);
-  padding: 1rem;
+  padding: 2rem;
+  border-right: none;
+}
+
+.t1 {
+  color: var(--very-light-grey);
+  text-align: right;
+}
+
+.t2 {
+  color: var(--very-light-grey);
+}
+
+.side--container-1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.side--container-2 {
+  text-align: right;
+}
+
+.side--container-2 p {
+  margin: 0.25rem 0;
+}
+
+.side--margin-1 {
+  margin-bottom: 4rem;
+}
+
+.side--ul {
+  list-style-type: none;
 }
 
 @media screen and (min-width: 1192px) {
   .side-pane {
-    width: 99%;
+    border-right: 1px solid var(--very-light-grey);
   }
 }

@@ -2,6 +2,30 @@
   background-color: var(--grayish-dark-blue);
   color: var(--very-light-grey);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 3rem;
+  border-bottom: 1px solid var(--very-light-grey);
+}
+
+.name {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 1rem 0;
+  font-weight: 200;
+}
+
+.lastname {
+  color: var(--icy-blue);
+}
+
+.title {
+  margin: 0;
+}
+
+@media screen and (min-width: 1192px) {
+  .top-pane {
+    border-bottom: none;
+  }
 }
