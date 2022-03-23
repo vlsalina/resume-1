@@ -72,13 +72,51 @@ const SidePane = () => {
       </div>
       <div className="side--container-2 side--margin-1">
         <h3 className="main__header">key skills</h3>
-        <ul className="side--ul">
-          {skills.map((x) => (
-            <li key={`side-${x.name}`}>
-              <p className="t2">{x.name}</p>
-            </li>
-          ))}
-        </ul>
+
+        <div className="side--container-3">
+          <div>
+            <p className="main__header side__header">Frontend</p>
+          </div>
+          <div>
+            <ul className="side--ul">
+              {skills.frontend.map((x) => (
+                <li key={`side-${x.name}`}>
+                  <p className="t2">{x.name}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="side--container-3">
+          <div>
+            <p className="main__header side__header">Backend</p>
+          </div>
+          <div>
+            <ul className="side--ul">
+              {skills.backend.map((x) => (
+                <li key={`side-${x.name}`}>
+                  <p className="t2">{x.name}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className="side--container-3">
+          <div>
+            <p className="main__header side__header">Tools</p>
+          </div>
+          <div>
+            <ul className="side--ul">
+              {skills.tools.map((x) => (
+                <li key={`side-${x.name}`}>
+                  <p className="t2">{x.name}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );

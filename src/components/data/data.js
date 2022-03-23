@@ -37,41 +37,24 @@ const projects = [
   },
 ];
 
-const skills = [
-  {
-    name: "HTML",
-  },
-  {
-    name: "CSS",
-  },
-  {
-    name: "Javascript",
-  },
-  {
-    name: "Responsive Design",
-  },
-  {
-    name: "MongoDB",
-  },
-  {
-    name: "Express.js",
-  },
-  {
-    name: "React.js",
-  },
-  {
-    name: "Node.js",
-  },
-  {
-    name: "Mongoose",
-  },
-  {
-    name: "Redux",
-  },
-  {
-    name: "JSON Web Tokens",
-  },
-];
+const skills = {
+  frontend: [
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "Javascript" },
+    { name: "React.js" },
+    { name: "Redux" },
+    { name: "GSAP" },
+  ],
+  backend: [
+    { name: "MongoDB" },
+    { name: "Express.js" },
+    { name: "Node.js" },
+    { name: "Mongoose" },
+    { name: "JSON Web Tokens" },
+  ],
+  tools: [{ name: "Git" }],
+};
 
 const mailTo = `mailto:vincent.salinas.2022@googlemail.com`;
 

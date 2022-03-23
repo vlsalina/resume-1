@@ -35,6 +35,24 @@
 
 .side--ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side--ul-2 {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side__header {
+  font-style: italic;
+}
+
+.side--container-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
 }
 
 @media screen and (min-width: 1192px) {
