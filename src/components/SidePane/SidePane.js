@@ -3,6 +3,7 @@ import Hexagon from "../icons/Hexagon/Hexagon";
 import "./SidePane.css";
 import Nbsp from "../typesetters/NBSP/Nbsp";
 import { skills, mailTo } from "../data/data";
+import Download from "../Download/Download";
 
 const SidePane = () => {
   return (
@@ -27,9 +28,7 @@ const SidePane = () => {
           </li>
           <li>
             <div className="side--container-1">
-              <span className="t1">
-                2059 Lakeridge Circle Rd, Chula Vista, CA 91913
-              </span>
+              <span className="t1">Chula Vista, CA 91913</span>
               <Nbsp />
               <Hexagon />
             </div>
@@ -117,6 +116,10 @@ const SidePane = () => {
             </ul>
           </div>
         </div>
+      </div>
+      <div className="side--container-3">
+        <div />
+        <Download />
       </div>
     </section>
   );
